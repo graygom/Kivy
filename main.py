@@ -7,5 +7,23 @@
 #
 #
 
+from kivy.app import App
 
+
+
+
+
+#
+# TheLabApp
+#
+
+class TheLabApp(App):
+    pass
+
+
+#
+#
+#
+
+TheLabApp().run()
 

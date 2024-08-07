@@ -1,7 +1,129 @@
+#
+# TITLE:
+# AUTHOR: Hyunseung Yoo
+# PURPOSE:
+# REVISION:
+# REFERENCE: https://www.youtube.com/watch?v=l8Imtec4ReQ&t=1486s
+#
+#
+
+
+PageLayoutExample:
+
+
+<PageLayoutExample@PageLayout>:
+	MainWidget:
+	BoxLayoutExample:
+	AnchorLayoutExample:
+	GridLayoutExample:
 
 
 
+<ScrollViewExample@ScrollView>:
+	StackLayoutExample:
+		size_hint: 1.0, None
+		#height: 4000
+		height: self.minimum_height
 
 
 
+<StackLayoutExample>:
+	# left ~ right,  top ~ bottom	
+	#orientation: "rl-tb"
+	#padding: ("20dp", "20dp", "20dp", "20dp")
+	#spacing: "20dp", "20dp"
+	Button:
+		text: "A"
+		size_hint: 0.2, 0.2
+	Button:
+		text: "B"
+		size_hint: 0.2, 0.2
+	Button:
+		text: "C"
+		size_hint: 0.2, 0.2
+	Button:
+		text: "D"
+		size_hint: 0.2, 0.2
+	Button:
+		text: "E"
+		size_hint: 0.2, 0.2
+	Button:
+		text: "F"
+		size_hint: 0.2, 0.2
+
+
+		
+<GridLayoutExample@GridLayout>:
+	# rows
+	# cols
+	#cols: 3
+	rows: 2
+	Button:
+		text: "A"
+		size_hint: None, 1.0
+		width: "60dp"
+	BoxLayoutExample:
+	Button:
+		text: "C"
+	Button:
+		text: "D"
+		size_hint: None, 1.0
+		width: "60dp"
+	Button:
+		text: "E"
+	Button:
+		text: "F"
+
+
+
+<AnchorLayoutExample>:
+	# right, left, center
+	anchor_x: "center"
+	# bottom, top, center
+	anchor_y: "top"
+	BoxLayout:
+		size_hint: 0.2, 0.2
+		Button:
+			text: "A"
+		Button:
+			text: "B"
+
+
+
+<BoxLayoutExample>:
+	orientation: "horizontal"
+	Button:
+		text: "A"
+		size_hint: 0.5, 0.5
+		pos_hint: { "center_y": 0.5 }
+		
+	BoxLayout:
+		orientation: "vertical"
+		spacing: "10dp"
+		Button:
+			text: "black"
+		Button:
+			text: "white"
+		Button:
+			text: "gray"
+		Button:
+			text: "panda"
+			
+	Button:
+		text: "B"
+		
+
+
+<MainWidget>:
+	Button:
+		text: "Hello"
+		size: "100dp", " 40dp"
+		pos: "100dp", "100dp"
+    Label:
+    	text: "Graygom"
+    	size: "100dp", "40dp"
+    	pos: "100dp", "200dp"
+    	color: 0.0, 1.0, 0.0, 1.0
+		
+		
 
